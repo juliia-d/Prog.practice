@@ -24,10 +24,6 @@ def main(
     file: bool = typer.Option(False, "-f", help="Read numbers from file"),
     output: bool = typer.Option(False, "-o", help="Write result to output file"),
 ):
-    """
-    Sum integers from command line or from file 'file'.
-    """
-
     
     if file:
         numbers = read_numbers_from_file()
@@ -45,5 +41,6 @@ def main(
 
 if __name__ == "__main__":
     app()
+
 
 
